@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILLE -o c
+gcc -E $CFILLE -o c
