@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-	int a = 0;
+	int a;
 
-	for (a ; a <= 10 ; a++)
+	for (a = 0; a <= 9 ; a++)
 	{
 		printf("%d", a);
 	}
