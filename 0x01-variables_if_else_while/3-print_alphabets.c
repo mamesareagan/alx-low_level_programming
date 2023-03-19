@@ -9,16 +9,11 @@ int main(void)
 	int a = 97;
 	int c = 65;
 
-	while (a <= 122)
+	for (a = 97,c = 65 ; a <= 122,c <= 98 ; a++,c++)
 	{
 		putchar(a);
-		a++;
-	}
-	while (c <= 98)
-	{
 		putchar(c);
-		c++;
 	}
-	putchar('\n');
+	putchar ('\n');
 	return (0);
 }
