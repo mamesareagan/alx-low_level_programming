@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	int n1 = 48;
+	int n1;
 	int n2;
 
-	for (n1; n1 <= 56; n1++)
+	for (n1 = 48; n1 <= 56; n1++)
 	{
 		for (n2 = n1 + 1; n2 <= 57; n2++)
 		{
