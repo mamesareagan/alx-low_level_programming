@@ -5,36 +5,29 @@
  * Return: Always 0.
  */
 int main(void)
-{
-	int a;
-
-	for (a  = 1; a <= 100; a++)
 	{
-		if ((a % 3) == 0 && (a % 5) == 0)
-		{
+	int num;
+
+	for (num = 1; num <= 100; num++)
+	{
+		if ((num % 3) == 0 && (num % 5) == 0)
 			printf("FizzBuzz");
-			putchar(' ');
-		}
-		else if ((a % 5) == 0)
-		{
-			printf("Buzz");
-			if (a == 100)
-			{
-				continue;
-			}
-			putchar(' ');
-		}
-		if ((a % 3) == 0)
-		{
+
+		else if ((num % 3) == 0)
 			printf("Fizz");
-			putchar(' ');
-		}
+
+		else if ((num % 5) == 0)
+			printf("Buzz");
+
 		else
-		{
-			printf("%d", a);
-			putchar(' ');
-		}
+			printf("%d", num);
+
+		if (num == 100)
+			continue;
+		printf(" ");
 	}
-	putchar('\n');
+
+	printf("\n");
+
 	return (0);
 }
