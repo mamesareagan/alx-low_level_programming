@@ -1,3 +1,4 @@
+#include <string.h>
 #include "main.h"
 /**
  * _puts_recursion - prints a string followed by new line
@@ -8,7 +9,7 @@ void _puts_recursion(char *s)
 	/*print first address of s*/
 	_putchar(*s);
 	/*Ending the recursion*/
-	if (*s == '\0' || *(s + 1) == '\0')
+	if (strlen(s) == 0 || *s == '\0' || *(s + 1) == '\0')
 	{
 		_putchar('\n');
 		return;
