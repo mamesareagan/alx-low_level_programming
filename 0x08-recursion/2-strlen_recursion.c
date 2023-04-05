@@ -1,7 +1,9 @@
 #include "main.h"
 /**
  * _strlen_recursion - Gets lenghh of a string
- * @s:String to be counted 
+ * @s:String to be counted
+ *
+ * Return: length of string
  */
 int _strlen_recursion(char *s)
 {
@@ -9,7 +11,7 @@ int _strlen_recursion(char *s)
 	{
 		return (0);
 	}
-	else 
+	else
 	{
 		return (1 + _strlen_recursion(s + 1));
 	}
