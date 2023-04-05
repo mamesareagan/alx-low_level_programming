@@ -9,7 +9,7 @@ void _puts_recursion(char *s)
 	/*print first address of s*/
 	_putchar(*s);
 	/*Ending the recursion*/
-	if (strlen(s) == 0 || *s == '\0' || *(s + 1) == '\0')
+	if (s == NULL || *s == '\0' || *(s + 1) == '\0')
 	{
 		_putchar('\n');
 		return;
