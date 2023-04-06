@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- * strlen - Returns the length of a string.
+ * _strlen - Returns the length of a string.
  * @s: The string to be measured.
  *
  * Return: The length of the string.
  */
-int strlen(char *s)
+int _strlen(char *s)
 {
 	int len = 0;
 
 	if (*(s + len))
 	{
 		len++;
-		len += strlen(s + len);
+		len += _strlen(s + len);
 	}
 
 	return (len);
@@ -49,7 +49,7 @@ int if_palindrome(char *s, int len, int index)
 int is_palindrome(char *s)
 {
 	int index = 0;
-	int len = strlen(s);
+	int len = _strlen(s);
 
 	if (!(*s))
 		return (1);
