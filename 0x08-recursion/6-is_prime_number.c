@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * is_divisible - Checks if a number is divisible.
+ * divisible - Checks if a number is divisible.
  * @n: The number to be checked.
  * @v: The divisor.
  *
