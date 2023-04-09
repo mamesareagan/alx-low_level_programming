@@ -20,14 +20,14 @@ int main(int argc, char *argv[])
 			mul *= atoi(argv[a]);
 		}
 		printf("%d\n", mul);
+		return (0);
 	}
 	else
 	{
 		if (argc == 1 || argc > 3)
 		{
 			printf("Error\n");
-			return (1);
 		}
+		return (1);
 	}
-	return (0);
 }
