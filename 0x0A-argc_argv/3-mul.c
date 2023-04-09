@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
 
 	if (argc > 1 && argc < 4)
 	{
+		/*multiplies two arguments passed to it*/
 		for (a = 1; a < 3; a++)
 		{
 			mul *= atoi(argv[a]);
@@ -24,10 +25,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		if (argc == 1 || argc > 3)
-		{
-			printf("Error\n");
-		}
-		return (1);
+		printf("Error\n");
 	}
+	return (1);
 }
