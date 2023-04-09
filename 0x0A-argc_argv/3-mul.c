@@ -13,10 +13,10 @@ int main(int argc, char *argv[])
 	int mul = 1;
 	int a;
 
-	if (argc > 1 && argc < 4)
+	if (argc == 3)
 	{
 		/*multiplies two arguments passed to it*/
-		for (a = 1; a < 3; a++)
+		for (a = 1; a < argc; a++)
 		{
 			mul *= atoi(argv[a]);
 		}
