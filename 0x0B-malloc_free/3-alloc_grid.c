@@ -28,7 +28,10 @@ int **alloc_grid(int width, int height)
 		/*create height rows of width elements*/
 		p[j] = (int *) malloc(width * sizeof(int));
 		if (p[j] == NULL)
+		{
 			return (NULL);
+			free(p);
+		}
 		/*assigns each grid 0*/
 		for (i = 0; i < width; i++)
 		{
