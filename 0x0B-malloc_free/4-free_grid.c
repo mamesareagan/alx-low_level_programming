@@ -10,17 +10,17 @@
  */
 void free_grid(int **grid, int height)
 {
-    int i;
+	int i;
 
-    if (grid == NULL)
-    {
-        return;
-    }
+	if (grid == NULL)
+	{
+		return;
+	}
 
-    for (i = 0; i < height; i++)
-    {
-        free(grid[i]); /* Free rows*/
-    }
+	for (i = 0; i < height; i++)
+	{
+		free(grid[i]); /* Free rows*/
+	}
 
-    free(grid); /* Free the array of pointers to rows*/
+	free(grid); /* Free the array of pointers to rows*/
 }
