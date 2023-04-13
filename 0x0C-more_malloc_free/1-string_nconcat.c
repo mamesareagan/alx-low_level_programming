@@ -35,7 +35,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	result = malloc(sizeof(char) * (concat_len + 1));
 	if (result == NULL)
 	{
-		return NULL; /* Return NULL if memory allocation fails */
+		return (NULL); /* Return NULL if memory allocation fails */
 	}
 
 	/* Copy s1 to the result string */
@@ -44,5 +44,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	/* Concatenate n characters from s2 to the result string */
 	strncat(result, s2, n);
 
-	return result;
+	return (result);
 }
