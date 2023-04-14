@@ -10,23 +10,22 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *p;
-	unsigned char *pq;
-	unsigned int a;
+	void *alocation;
+	char *fi;
+	unsigned int index;
 
 	if (nmemb == 0 || size == 0)
-	{
 		return (NULL);
-	}
-	p = malloc(nmemb * size);
-	if (p == NULL)
-	{
+
+	alocation = malloc(size * nmemb);
+
+	if (alocation == NULL)
 		return (NULL);
-	}
-	pq = (unsigned char *)p;
-	for (a = 0; a < nmemb; a++)
-	{
-		pq[a] = 0;
-	}
-	return (p);
+
+	fi = alocation;
+
+	for (index = 0; index < (size * nmemb); index++)
+		fi[index] = '\0';
+
+	return (alocation);
 }
