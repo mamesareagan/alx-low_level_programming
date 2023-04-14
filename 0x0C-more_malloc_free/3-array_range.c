@@ -27,15 +27,10 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	/*loop to go through memory*/
+	/*loop through memory assigning values from min to max*/
 	for (c = 0; c < count; c++)
 	{
-		/*loop from max to min*/
-		for (b = min; b <= max; b++)
-		{
-			/*assignment of max to min to the memory*/
-			a[c] = b;
-		}
+		a[c] = min + c;
 	}
 	return (a);
 }
