@@ -1,6 +1,10 @@
 #ifndef CALC_H
 #define CALC_H
 
+#define SUM(a, b) ((a) + (b))
+#define SUB(a, b) ((a) - (b))
+#define MUL(a, b) ((a) * (b))
+#define MOD(a, b) ((a) % (b))
 /**
  * struct op - struct op
  * @op: The operator
