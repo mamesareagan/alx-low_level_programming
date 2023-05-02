@@ -5,8 +5,8 @@
  * print_listint -prints all elements of list
  *@h: pointer to head node
  *
- * return: number of nodes
- * */
+ * Return: number of nodes
+ */
 size_t print_listint(const listint_t *h)
 {
 	unsigned int j;
